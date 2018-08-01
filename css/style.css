@@ -354,7 +354,8 @@ code {
   -moz-transition: 0.2s ease;
   -ms-transition: 0.2s ease;
   transition: 0.2s ease;
-  color: #565a5f;
+  color: #1e314b;
+  font-weight: bold;
 }
 #header a:hover {
   color: #00e587;
@@ -728,6 +729,13 @@ code {
 }
 #profile .inner .article-info .article-info-block:first-child {
   border-right: 1px solid #eceff2;
+}
+#profile .inner .article-info .article-info-block a {
+  text-decoration: underline;
+  color: #4e5256;
+}
+#profile .inner .article-info .article-info-block a:hover {
+  text-decoration: none;
 }
 #profile .inner .social-links > table {
   width: 100%;
