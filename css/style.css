@@ -1790,6 +1790,8 @@ a.article-title:hover {
   font-weight: 900;
   font-size: 16px;
   color: #1d3654;
+  border-left: solid 3px #31e280;
+  padding-left: 1em;
 }
 .widget {
   padding: 15px 5px;
