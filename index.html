@@ -152,11 +152,11 @@
             <h2 id="name">ハイロン</h2>
             <h3 id="title">活動記録</h3>
             <span id="location"><i class="fas fa-map-marker-alt" style="padding-right: 5px"></i>Tokyo / Nara</span>
-            <a id="follow" target="_blank" href="https://hyrogram.com">メインサイト</a>
+            <a id="follow" target="_blank" href="https://hyrogram.com">メインサイト <i class="fas fa-external-link-alt"></i></a>
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                <a href="https://blog.hyrogram.com/archives/">2</a>
+                <a href="https://blog.hyrogram.com/archives/">3</a>
                 <span>投稿</span>
             </div>
             <div class="article-info-block">
@@ -185,6 +185,144 @@
 
             
             <section id="main">
+    <article id="post-デザイナーがHEXOブログ作りで色々やらかした話" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/08/03/">デザイナーがHEXOブログ作りで色々やらかした話</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fas fa-calendar-alt"></i>
+        <a href="/2018/08/03/">
+            <time datetime="2018-08-03T14:18:31.000Z" itemprop="datePublished">2018-08-03</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fas fa-folder"></i>
+        <a class="article-category-link" href="/categories/雑記/">雑記</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/web/">web</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><p><img src="/img/hexo.gif"></p>
+<p><span class="boldh">「3分でつくれる！」「表示も速い！」「サーバー代かからない！」<br>「独自ドメイン使える！」「広告無し！」「セキュリティ強い！」<br>「し・か・も無料！」・・・という夢のようなブログ！！<br><span class="biggerf kiiro_h">それが静的サイトジェネレーター！HEXO（読み方わからない）！！</span></span></p>
+<p>と聞きかじったので<span class="koniro">Github Pagesを使ってhexoブログを作ってみました！</span><br>…が！Gitすらあいまいで「コマンドってあの黒い画面？叩くって動詞使うの？」くらいのデザイナーには正直ハードルが高すぎた…<br><span class="pink">3分どころか丸二日以上かけて</span>やっと公開にこぎつけました。</p>
+<p>ざっくり言うと、<span class="koniro">Githubというgitサービスでオプション的に静的サイトを無料で作れる（github pages）</span>ので、そこに<span class="koniro">静的サイトジェネレーターというツールで作った予めブログ状態になったファイル群をアップしてブログ作る</span>、って感じ。<br>アクセスされるタイミングでページを生成するワードプレスなど動的サイトと違って、ページはすでにあるので表示が早い、ということらしい。<br>ちなみに静的サイトジェネレーターは使われてる言語でいろんな種類があって<span class="koniro">HEXOはJavaScript製</span>です。</p>
+<p>導入にあたって参考にした記事はこちら↓<br><a href="https://liginc.co.jp/web/programming/server/104594" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> 所要時間3分!? Github PagesとHEXOで爆速ブログ構築してみよう！</a><br><a href="https://dotstud.io/blog/hexo-static-site-vol1/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Node.js製の静的サイトジェネレータ「Hexo」で無料ブログ開発 vol.1</a><br><a href="https://photo-tea.com/p/17/hexo-start-kit-tools-3/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> node.jsの開発環境を用意しよう。Hexoブログに必要なツールを揃える</a><br><a href="https://tech.qookie.jp/posts/hexo-deploy-github-pages-fast/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> HexoブログをGitHub Pagesで最速公開する</a></p>
+<p>基本的に上記の記事の通りにやればできるのですが、超初心者の私は<span class="koniro">ハマりどころ以前のところでハマりまくった</span>ので、<span class="koniro kiiro_h">過去の可哀想な自分に伝えたいこと</span>をまとめました。</p></p>
+            <p class="article-more-link">
+                <a href="/2018/08/03/#more">Read More</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="https://blog.hyrogram.com/2018/08/03/" data-id="cjkdbj8yu0000k86y29pcvwp1" class="article-share-link"><i class="fas fa-share"></i>共有</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fab fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fab fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fab fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fab fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="https://blog.hyrogram.com/2018/08/03/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://blog.hyrogram.com/2018/08/03/">コメント</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-第10回ネーム大賞エントリー" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -217,7 +355,7 @@
                         
     <div class="article-tag">
         <i class="fas fa-tag"></i>
-        <a class="tag-link" href="/tags/オリジナル/">オリジナル</a>, <a class="tag-link" href="/tags/ネーム大賞/">ネーム大賞</a>, <a class="tag-link" href="/tags/漫画/">漫画</a>
+        <a class="tag-link" href="/tags/ネーム/">ネーム</a>, <a class="tag-link" href="/tags/漫画/">漫画</a>
     </div>
 
                     </div>
@@ -354,7 +492,7 @@
                         
     <div class="article-tag">
         <i class="fas fa-tag"></i>
-        <a class="tag-link" href="/tags/オリジナル/">オリジナル</a>, <a class="tag-link" href="/tags/デザイン/">デザイン</a>, <a class="tag-link" href="/tags/商業/">商業</a>, <a class="tag-link" href="/tags/漫画/">漫画</a>
+        <a class="tag-link" href="/tags/デザイン/">デザイン</a>, <a class="tag-link" href="/tags/漫画/">漫画</a>, <a class="tag-link" href="/tags/電子書籍/">電子書籍</a>
     </div>
 
                     </div>
@@ -483,6 +621,25 @@
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2018/08/03/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/img/hexo.gif)" alt="デザイナーがHEXOブログ作りで色々やらかした話" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/雑記/">雑記</a></p>
+                            <p class="item-title"><a href="/2018/08/03/" class="title">デザイナーがHEXOブログ作りで色々やらかした話</a></p>
+                            <p class="item-date"><time datetime="2018-08-03T14:18:31.000Z" itemprop="datePublished">2018-08-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2018/07/15/" class="thumbnail">
     
     
@@ -525,18 +682,18 @@
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">カテゴリ</h3>
+        <h3 class="widget-title">タグ</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/お知らせ/">お知らせ</a><span class="category-list-count">2</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/デザイン/">デザイン</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ネーム/">ネーム</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/漫画/">漫画</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/電子書籍/">電子書籍</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">タグ</h3>
+        <h3 class="widget-title">カテゴリ</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/オリジナル/">オリジナル</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/デザイン/">デザイン</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ネーム大賞/">ネーム大賞</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/商業/">商業</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/漫画/">漫画</a><span class="tag-list-count">2</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/お知らせ/">お知らせ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/雑記/">雑記</a><span class="category-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -545,7 +702,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">アーカイブ</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">2018/07</a><span class="archive-list-count">2</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">2018/08</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">2018/07</a><span class="archive-list-count">2</span></li></ul>
         </div>
     </div>
 

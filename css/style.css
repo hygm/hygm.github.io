@@ -318,7 +318,7 @@ code {
 .article-entry dl,
 .widget dl {
   margin: 0 20px;
-  line-height: 1.6em;
+  line-height: 1.3em;
 }
 .article-entry ul ul,
 .widget ul ul,
@@ -1734,7 +1734,7 @@ a.article-title:hover {
   }
 }
 .widget {
-  line-height: 1.6em;
+  line-height: 0em;
   word-wrap: break-word;
   font-size: 0.9em;
 }
