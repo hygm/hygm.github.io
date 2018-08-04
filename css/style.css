@@ -318,7 +318,7 @@ code {
 .article-entry dl,
 .widget dl {
   margin: 0 20px;
-  line-height: 1.3em;
+  line-height: 1.6em;
 }
 .article-entry ul ul,
 .widget ul ul,
@@ -857,12 +857,28 @@ code {
     opacity: 1;
   }
 }
+.biggerf {
+  font-size: 1.2em;
+}
+.boldh {
+  font-weight: 900;
+}
 .pink {
   color: #ff348c;
   font-weight: 900;
 }
+.koniro {
+  color: #1e2c43;
+  font-weight: 900;
+}
 .kiiro {
   background: #ff0;
+}
+.kiiro_h {
+  background: -webkit-linear-gradient(transparent 60%, #ff0 60%);
+  background: -moz-linear-gradient(transparent 60%, #ff0 60%);
+  background: -ms-linear-gradient(transparent 60%, #ff0 60%);
+  background: linear-gradient(transparent 60%, #ff0 60%);
 }
 .twitter-wrapper twitterwidget {
   margin: 0 auto;
@@ -1091,12 +1107,13 @@ a.article-title:hover {
   color: #999;
   text-shadow: 0 1px #fff;
   text-decoration: none;
+  border: 1px solid #eee;
 }
 .article-more-link a:hover {
   background: #00e587;
   color: #fff;
   text-decoration: none;
-  text-shadow: 0 1px #00b76c;
+  border: 1px solid #fff;
 }
 .article-footer {
   font-size: 0.85em;
@@ -1734,7 +1751,7 @@ a.article-title:hover {
   }
 }
 .widget {
-  line-height: 0em;
+  line-height: 1.6em;
   word-wrap: break-word;
   font-size: 0.9em;
 }
