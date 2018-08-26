@@ -6,7 +6,7 @@
     <title>デザイナーがHEXOブログ作りで色々やらかした話 | HYROGRAM blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="Github pages+HEXOでブログ作り。ハマりどころ以前のところでハマりまくったので、過去の可哀想な自分に伝えたいことをまとめました。">
-<meta name="keywords" content="web">
+<meta name="keywords" content="web,HEXO">
 <meta property="og:type" content="article">
 <meta property="og:title" content="デザイナーがHEXOブログ作りで色々やらかした話">
 <meta property="og:url" content="https://blog.hyrogram.com/2018/08/03/index.html">
@@ -14,7 +14,7 @@
 <meta property="og:description" content="Github pages+HEXOでブログ作り。ハマりどころ以前のところでハマりまくったので、過去の可哀想な自分に伝えたいことをまとめました。">
 <meta property="og:locale" content="ja">
 <meta property="og:image" content="https://blog.hyrogram.com/img/hexo.gif">
-<meta property="og:updated_time" content="2018-08-04T05:29:32.697Z">
+<meta property="og:updated_time" content="2018-08-26T12:23:41.647Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="デザイナーがHEXOブログ作りで色々やらかした話">
 <meta name="twitter:description" content="Github pages+HEXOでブログ作り。ハマりどころ以前のところでハマりまくったので、過去の可哀想な自分に伝えたいことをまとめました。">
@@ -163,11 +163,11 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                <a href="https://blog.hyrogram.com/archives/">3</a>
+                <a href="https://blog.hyrogram.com/archives/">4</a>
                 <span>投稿</span>
             </div>
             <div class="article-info-block">
-                <a href="https://blog.hyrogram.com/tags/">5</a>
+                <a href="https://blog.hyrogram.com/tags/">6</a>
                 <span>タグ</span>
             </div>
         </div>
@@ -217,13 +217,13 @@
                         
     <div class="article-category">
     	<i class="fas fa-folder"></i>
-        <a class="article-category-link" href="/categories/雑記/">雑記</a>
+        <a class="article-category-link" href="/categories/備忘録/">備忘録</a>
     </div>
 
                         
     <div class="article-tag">
         <i class="fas fa-tag"></i>
-        <a class="tag-link" href="/tags/web/">web</a>
+        <a class="tag-link" href="/tags/HEXO/">HEXO</a>, <a class="tag-link" href="/tags/web/">web</a>
     </div>
 
                     </div>
@@ -234,13 +234,6 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-
-  <div id="toc" class="toc-article">
-<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#そもそもconfig-ymlを見つけ出せない"><span class="toc-text"> そもそもconfig.ymlを見つけ出せない</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#githubに拒否られる"><span class="toc-text"> githubに拒否られる</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#なぜパスが通っていないのか"><span class="toc-text"> なぜパスが通っていないのか</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#テーマ変えたらレイアウトが崩壊"><span class="toc-text"> テーマ変えたらレイアウトが崩壊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#終わりに"><span class="toc-text">終わりに</span></a></li></ol>
-  </div>
-　
-        
-
             <p><img src="/img/hexo.gif"></p>
 <p><span class="boldh">「3分でつくれる！」「表示も速い！」「サーバー代かからない！」<br>「独自ドメイン使える！」「広告無し！」「セキュリティ強い！」<br>「し・か・も無料！」・・・という夢のようなブログ！！<br><span class="biggerf kiiro_h">それが静的サイトジェネレーター！HEXO（読み方わからない）！！</span></span></p>
 <p>と聞きかじったので<span class="koniro">Github Pagesを使ってhexoブログを作ってみました！</span><br>…が！Gitすらあいまいで「コマンドってあの黒い画面？叩くって動詞使うの？」くらいのデザイナーには正直ハードルが高すぎた…<br><span class="pink">3分どころか丸二日以上かけて</span>やっと公開にこぎつけました。</p>
@@ -249,12 +242,12 @@
 <p>基本的に上記の記事の通りにやればできるのですが、超初心者の私は<span class="koniro">ハマりどころ以前のところでハマりまくった</span>ので、<span class="koniro kiiro_h">過去の可哀想な自分に伝えたいこと</span>をまとめました。</p>
 <a id="more"></a>
 <p><br></p>
-<h2 id="そもそもconfig-ymlを見つけ出せない"><a href="#そもそもconfig-ymlを見つけ出せない" class="headerlink" title=" そもそもconfig.ymlを見つけ出せない"></a><span class="pink"><i class="fas fa-exclamation-triangle"></i> そもそもconfig.ymlを見つけ出せない</span></h2><p><span class="kiiro_h">HEXOインストールして、一番最初の設定いじろうって時</span>に早々にハマったポイント。<br>config.ymlをどう書き換えるかとか解説記事にあるからわかるけど、そもそもどこ探しても<span class="koniro">config.yml自体が見あたらない</span>…え？なんで？私いつの間にやらかした？？</p>
+<h2><span id="そもそもconfigymlを見つけ出せない"><span class="pink"><i class="fas fa-exclamation-triangle"></i> そもそもconfig.ymlを見つけ出せない</span></span></h2><p><span class="kiiro_h">HEXOインストールして、一番最初の設定いじろうって時</span>に早々にハマったポイント。<br>config.ymlをどう書き換えるかとか解説記事にあるからわかるけど、そもそもどこ探しても<span class="koniro">config.yml自体が見あたらない</span>…え？なんで？私いつの間にやらかした？？</p>
 <p><span style="border-radius:10px;border:#1F7AC5 solid 3px;padding:10px 0;"><span style="background:#1F7AC5;color:#FFF;padding:10px;"> <i class="fab fa-angellist"></i> 解決方法</span> <span style="color: #1F7AC5;font-weight: 900;padding:0 1em;">隠しファイルを表示しよう！</span></span></p>
 <p><a href="https://121ware.com/qasearch/1007/app/servlet/relatedqa?QID=018261" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Windows 10で隠しファイルやシステムファイルを表示する方法</a></p>
 <p>もうこれパソコン教室レベルですが<span class="koniro">コントロールパネルから隠しファイルを表示するように設定すると、ちゃんと見える</span>ようになります。こんなとこでハマるのは私ぐらいな気もしますが…（笑）</p>
 <p><br></p>
-<h2 id="githubに拒否られる"><a href="#githubに拒否られる" class="headerlink" title=" githubに拒否られる"></a><span class="pink"><i class="fas fa-exclamation-triangle"></i> githubに拒否られる</span></h2><p><span class="kiiro_h">ローカルサーバーで表示できた！次はGithub pagesで公開するぞ～！って時</span>にハマったポイント。<br>githubに接続しようとすると</p>
+<h2><span id="githubに拒否られる"><span class="pink"><i class="fas fa-exclamation-triangle"></i> githubに拒否られる</span></span></h2><p><span class="kiiro_h">ローカルサーバーで表示できた！次はGithub pagesで公開するぞ～！って時</span>にハマったポイント。<br>githubに接続しようとすると</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fatal: Could not read from remote repository.</span><br><span class="line">Please make sure you have the correct access rights and repository exists.</span><br></pre></td></tr></table></figure>
 <p>とか表示されて、<span class="koniro">アクセスできてないっぽい</span>…</p>
 <p>正しいアクセス権？？リポジトリがあるか確認しろ？？<br>わからないことが多すぎて何で怒られてるのかさっぱり見当がつかない… </p>
@@ -262,18 +255,18 @@
 <p><a href="https://qiita.com/shizuma/items/2b2f873a0034839e47ce" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> gitHubでssh接続する手順~公開鍵・秘密鍵の生成から~</a></p>
 <p><span class="koniro">githubに接続するには、公開鍵・秘密鍵を生成して、公開鍵の方をgithubに登録する必要</span>があります。普段github使ってる人にとっては当たり前すぎる工程なので解説でも省かれがち。github素人は要注意かも知れません。</p>
 <p><br></p>
-<h2 id="なぜパスが通っていないのか"><a href="#なぜパスが通っていないのか" class="headerlink" title=" なぜパスが通っていないのか"></a><span class="pink"><i class="fas fa-exclamation-triangle"></i> なぜパスが通っていないのか</span></h2><p><span class="kiiro_h">無事初デプロイしてGithub pagesで公開できた…けど…やけにこざっぱりしてるー！って時</span>にハマってたポイント。<br>サイトは構築されてるもののCSSが何もあたってない…てか<span class="koniro">初期設定でパスがちゃんと通ってない</span>という状況に陥ってました…</p>
+<h2><span id="なぜパスが通っていないのか"><span class="pink"><i class="fas fa-exclamation-triangle"></i> なぜパスが通っていないのか</span></span></h2><p><span class="kiiro_h">無事初デプロイしてGithub pagesで公開できた…けど…やけにこざっぱりしてるー！って時</span>にハマってたポイント。<br>サイトは構築されてるもののCSSが何もあたってない…てか<span class="koniro">初期設定でパスがちゃんと通ってない</span>という状況に陥ってました…</p>
 <p><span style="border-radius:10px;border:#1F7AC5 solid 3px;padding:10px 0;"><span style="background:#1F7AC5;color:#FFF;padding:10px;"> <i class="fab fa-angellist"></i> 解決方法</span> <span style="color: #1F7AC5;font-weight: 900;padding:0 1em;">リポジトリ名はちゃんと付けよう！</span></span></p>
 <p><a href="https://code.i-harness.com/ja/q/f8f797" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> [Html] GitHubページと相対パス</a> ※HexoでなくてJekyllの記事ですが</p>
 <p>Github pagesに使うリポジトリの名前は必ず<span class="koniro kiiro_h">(owner名).github.io</span>としましょう…！<br>Github pagesは<span class="koniro kiiro_h">https://(owner名).github.io</span>ってURLになります。</p>
 <p><img src="/img/0803.jpg"></p>
 <p>私みたいに何も考えずリポジトリ名をblog.github.ioとかしちゃうと、<span class="koniro">構築はされてもCSSも画像も全部のURLがおかしくなる</span>のでパスが通らない悲しい状態に…</p>
 <p><br></p>
-<h2 id="テーマ変えたらレイアウトが崩壊"><a href="#テーマ変えたらレイアウトが崩壊" class="headerlink" title=" テーマ変えたらレイアウトが崩壊"></a><span class="pink"><i class="fas fa-exclamation-triangle"></i> テーマ変えたらレイアウトが崩壊</span></h2><p>github pagesでちゃんとHEXOも動いたことだしデフォルトじゃなくてかっこいいテーマを使ってみよう！テーマ変えてローカルサーバーでチェック！よし、バッチリ☆けどデプロイしてサイト見ると…完全に崩壊しとるー…<br><span class="kiiro_h">デフォルトのテーマと混じったようなカオスな状態</span>に…</p>
+<h2><span id="テーマ変えたらレイアウトが崩壊"><span class="pink"><i class="fas fa-exclamation-triangle"></i> テーマ変えたらレイアウトが崩壊</span></span></h2><p>github pagesでちゃんとHEXOも動いたことだしデフォルトじゃなくてかっこいいテーマを使ってみよう！テーマ変えてローカルサーバーでチェック！よし、バッチリ☆けどデプロイしてサイト見ると…完全に崩壊しとるー…<br><span class="kiiro_h">デフォルトのテーマと混じったようなカオスな状態</span>に…</p>
 <p><a href="http://pagent.github.io/2014/11/22/hexo-theme/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i>Hexoのテーマを変更したら、元に戻せなくなった</a><br>↑を参考に <span class="koniro">hexo clean で一度更地にしてもっかいデプロイして再構築…<br>え…それでもダメ…？</span></p>
 <p><span style="border-radius:10px;border:#1F7AC5 solid 3px;padding:10px 0;"><span style="background:#1F7AC5;color:#FFF;padding:10px;"> <i class="fab fa-angellist"></i> 解決方法</span> <span style="color: #1F7AC5;font-weight: 900;padding:0 1em;">時間</span></span></p>
 <p>chromeのキャッシュめっちゃ強いってのもあったのですが、やっぱり<span class="koniro">ほんとの静的サイトよりは反映に時間がかかる</span>っぽいです。速攻であちこちいじって混乱してたのですが、<span class="koniro">あきらめて放置してたらなんかちゃんと構築されてた</span>という…<br><br></p>
-<h2 id="終わりに"><a href="#終わりに" class="headerlink" title="終わりに"></a>終わりに</h2><p>まとめると<span class="pink">全ての段階で躓いてた</span>のがよーくわかって、よく形になったな…と…（笑）HTMLとCSSとちょこっとJavaScriptぐらいは触ったことあるかな～くらいのノンプログラマーの方に参考にしていただければ！</p>
+<h2><span id="終わりに">終わりに</span></h2><p>まとめると<span class="pink">全ての段階で躓いてた</span>のがよーくわかって、よく形になったな…と…（笑）HTMLとCSSとちょこっとJavaScriptぐらいは触ったことあるかな～くらいのノンプログラマーの方に参考にしていただければ！</p>
 
         
         </div>
@@ -361,6 +354,15 @@
         
 <nav id="article-nav">
     
+        <a href="/2018/08/26/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">新しい記事</strong>
+            <div class="article-nav-title">
+                
+                    HEXOテーマ「icarus」導入のあれこれ
+                
+            </div>
+        </a>
+    
     
         <a href="/2018/07/15/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">古い記事</strong>
@@ -397,6 +399,25 @@
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2018/08/26/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/img/0804.jpg)" alt="HEXOテーマ「icarus」導入のあれこれ" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/備忘録/">備忘録</a></p>
+                            <p class="item-title"><a href="/2018/08/26/" class="title">HEXOテーマ「icarus」導入のあれこれ</a></p>
+                            <p class="item-date"><time datetime="2018-08-25T15:00:00.000Z" itemprop="datePublished">2018-08-26</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2018/08/03/" class="thumbnail">
     
     
@@ -407,7 +428,7 @@
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/雑記/">雑記</a></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/備忘録/">備忘録</a></p>
                             <p class="item-title"><a href="/2018/08/03/" class="title">デザイナーがHEXOブログ作りで色々やらかした話</a></p>
                             <p class="item-date"><time datetime="2018-08-03T14:18:31.000Z" itemprop="datePublished">2018-08-03</time></p>
                         </div>
@@ -460,7 +481,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">カテゴリ</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/お知らせ/">お知らせ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/雑記/">雑記</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/お知らせ/">お知らせ</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/備忘録/">備忘録</a><span class="category-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -469,7 +490,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">アーカイブ</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">2018/08</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">2018/07</a><span class="archive-list-count">2</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">2018/08</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">2018/07</a><span class="archive-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -478,7 +499,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">タグ</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/デザイン/">デザイン</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ネーム/">ネーム</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/漫画/">漫画</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/電子書籍/">電子書籍</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HEXO/">HEXO</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/デザイン/">デザイン</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ネーム/">ネーム</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/漫画/">漫画</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/電子書籍/">電子書籍</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
