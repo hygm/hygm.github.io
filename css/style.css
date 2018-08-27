@@ -857,6 +857,17 @@ code {
     opacity: 1;
   }
 }
+.article-entry ul {
+  list-style-type: none;
+  padding: 20px;
+  border: 1px solid #132f55;
+  width: 50%;
+  line-height: 1.8em;
+}
+.article-entry li a {
+  color: #132f55;
+  font-weight: bold;
+}
 .biggerf {
   font-size: 1.2em;
 }
