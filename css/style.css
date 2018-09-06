@@ -857,16 +857,19 @@ code {
     opacity: 1;
   }
 }
-.article-entry ul {
+.toc ul {
   list-style-type: none;
   padding: 20px;
   border: 1px solid #132f55;
   width: 50%;
   line-height: 1.8em;
 }
-.article-entry li a {
+.toc li a {
   color: #132f55;
   font-weight: bold;
+}
+.gray {
+  color: #999;
 }
 .biggerf {
   font-size: 1.2em;
